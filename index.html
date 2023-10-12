@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>User Validation</title>
+    <style>
+        .one{
+            color:black;
+           font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: large;
+        }
+        .two{
+            color:blue;
+        }
+        .three
+        {
+            
+            background-color:pink;
+            border-color: blue;
+            border-radius: 20px;
+            width: 50%;
+            margin: auto;
+
+        }
+        #four:hover
+        {
+            background-color: rgb(58, 58, 145);
+           
+        }
+       
+    </style>
+</head>
+<body>
+    <form action="usermessage.html">
+        <fieldset class="three"  te> 
+            <legend class = "one">Personal Details </legend>
+                  <label for="First Name" class="two"> First Name</label>
+                  <input type="text" id="Name" name="First Name" required placeholder="Ex:Sachin">
+                   <br><br>
+                  
+                   <label for="Middel Name" class="two">Middel Name</label>
+                   <input type="text" id="Name" name=" Middel Name" >
+                    <br><br>
+               
+                    <label for="Last Name" class="two"> Last Name</label>
+                    <input type="text" id="Name" name=" Last Name" required placeholder="Ex:S">
+                    <br><br>
+                    <label for="Email" class="two">Email</label>
+                    <input type="email" id="Email" name="Email" required>
+                    <br><br>
+                    <label for="DOB" class="two">DOB</label>
+                    <input type="date" id="DOB" name="DOB" required>
+                    
+                </fieldset>
+    
+        <fieldset class="three">
+            <legend class = "one" >Educational Details </legend>
+            <label for="" class="two">Department</label>
+            <br><br>
+                 <input type="radio" id="CS" name="dept">
+                 <label for="CS" >CS</label>
+             
+                <input type="radio" id="ECE" name="dept">
+                <label for="ECE">ECE</label>
+    
+                <input type="radio" id="Civil" name="dept">
+                <label for="Civil">Civil</label>
+    
+                <input type="radio" id="MECH" name="dept">
+                <label for="MECH">MECH</label>
+         <br><br>
+                 <label for="YOP" class="two">YOG</label>
+                 <input list="YOG" id="YOP" name="YOP">
+                 <datalist id="YOG">
+                    <option >2018</option>
+                    <option >2019</option>
+                    <option >2020</option>
+                    <option >2021</option>
+                    <option >2022</option>
+                    <option >2023</option>
+                   </datalist>
+                 <br><br>
+                 <label for="" class="two">Skills</label>
+                 <br><br>
+                 <input type="checkbox" id="JAVA" name="dept">
+                 <label for="HTML">JAVA</label>
+                 <br><br>
+                 <input type="checkbox" id="HTML" name="dept">
+                 <label for="HTML">HTML</label>
+    <br><br>
+                 <input type="checkbox" id="CSS" name="dept">
+                 <label for="CSS">CSS</label>
+    <br><br>
+                 <input type="checkbox" id="JAVASCRIPT" name="dept">
+                 <label for="JAVASCRIPT">JAVASCRIPT</label>
+    
+        
+         </fieldset>
+         <br>
+        <fieldset class="three">
+            <legend class="one">UserName Validation</legend>
+
+            <label for="rac" class="two">Salutaion</label>
+            <br>
+            <select name="rac" id="rac">
+                <option value="">None</option>
+                <option value="">Mr.</option>
+                <option value="">Mrs.</option>
+                <option value="">Dr.</option>
+              
+            </select>
+            <br><br>
+      <label for="userName" class="two">UserName</label>
+      <input type="text" id="userName" name="UserName" required  pattern="[A-Za-z]{3,10}">
+ <br><br>
+      <label for="Contact" class="two">Contact</label>
+      &nbsp; &nbsp;  
+
+      <input type="text" id="Contact" name="Contact" required pattern="[6-9]{1}[0-9]{9}">
+      <br><br>
+      <label for="Add" class="two">Address</label>
+      <br>
+
+    <textarea name="Add" id="Add" cols="30" rows="10"></textarea>
+  
+    </fieldset>
+    <button id="four" >Submit</button>
+    </form>
+</body>
+</html>
